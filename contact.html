@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt side</title>
+    
+    <!--Meta description blandt andet til at hjælpe med CEO samt understøtter google søgninger.-->
+    
+	<meta name="description" content="Kan du lide fodbold? Her på siden kan du finde tutorials om fodbold. En guide til hvordan du kan forbedre dig på fodboldbanen. ">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
+    
+    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="style.css" rel="stylesheet"> 
+    
+    
+    <!-- Bane blad icon -->
+	<link rel="shortcut icon" type="image/png" href="../../2-semester-eksamen/code-files/Eksamen-logo-2-semester.png">
+</head>
+
+<body>
+   <!-- Reponsive navigation bar via bootstrap --> 
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <!-- .container-fluid ændrer sig kontinuerligt, når du ændrer bredden på dit vindue / browser.-->
+        <div class="container-fluid">
+           <!-- Navbar class gør i dette tilfælde at der kommer en tynd streg som adskiller drop down når man trykker på den --> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                   <!-- Dette gør at man får burger-menuen frem når vinduet bliver mindre. Span er det icon der kommer frem, det vil sige 3 span class er = 3 iconer i burger-menuen --> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="line-effect">Forside</a></li>
+                    <li><a href="#" class="line-effect">Træning</a></li>
+                    <li><a href="#" class="line-effect">Om</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+    
+    
+  
+  
+
+    <!-- Kontakt sides indhold begynder her, med en overordnet "section" omkring alt indholdet -->
+    <section class="contact" id="contact">
+       <!-- her laves der en div container til at indholdet, så det er lettere at rykke rundt på --> 
+        <div class="container">
+           <!-- overskriften på siden, samt tekst under overskriften --> 
+            <div class="heading text-center">
+                <h2>Kontakt
+                    <span> os </span>
+                </h2>
+                    <p>I er meget velkommen til at tage kontakt hvis i er i tvivl eller har nogen spørgsmål.
+                        <br>Vi svare tilbage indenfor 24 timer.</p>
+                <!-- Her har vi givet hele formen 7 koloner når den er over md-breakpoint, så den fylder lidt mere end kontakt detaljer. -->   
+                <div class="col-md-7">
+
+                    <form>
+                       <!-- Her har vi givet formen en row for at holde styr på layoutet bedre. --> 
+                        <div class="row">
+                           <!-- Vi har opdelt de 2 første klasser så de fylder 6 col inde i den overordnet row, når den er over sm-breakpoint, når den kommer under sm-breakpoint så fylder hvert element 12 col -->
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="NAVN">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="EMNE">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="BESKED"></textarea>
+                        </div>
+                        <button class="btn btn-block" type="submit">SEND BESKED!</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Layout til hvordan elementerne placeres, alt indsættes i en row først --> 
+            <div class="row">
+               <!-- Her har vi givet kontakt detajler col-md-5 da kontakt detajler skal fylde mindre på siden.  --> 
+                <div class="col-md-5">
+                    <div class="title">
+                        <h3>Kontakt detajler :</h3>
+                        <p>Yderligere detajler, i er mere end velkommen til at ringe til os. </p>
+                    </div>
+                    <div class="content">
+                        <!-- Info-1 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">Telefon nummer : 
+                                <br>
+                                <span>+ 45 40 22 24 58</span></h4>
+                        </div>
+                        <!-- Info-2 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">E-mail :
+                                <br>
+                                <span>E-ballforall@hotmail.com</span></h4>
+                        </div>
+                        <!-- Info-3 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">Sociale medier : <br>
+                                
+                        </div>
+                        
+                        <div class="s-m">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+</body>
+</html>

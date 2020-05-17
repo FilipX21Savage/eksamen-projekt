@@ -1,0 +1,197 @@
+html, body {
+    height: 100%;
+    width:100%;
+    background: url(Baggrund1.1.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #13152C;
+        opacity: 0.98;
+    }
+}
+
+/*Nav bar styling */ 
+
+.navbar {
+    padding: 1% 0;
+    font-size: 17px;
+    border: none;
+}
+
+/* Farven på links i menuen */ 
+
+.navbar-default .navbar-nav li a {
+    color: #d5d5d5; 
+}
+
+/* Farven på linket man er inden på, samt en hover til det link man hover hen over */ 
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
+    color: #fff;
+}
+
+.line-effect::after {
+    content: ''; 
+    display: block; 
+    width: 0;
+    height: 2px;
+    background: #FDD228;
+    transition: width .3s; 
+}
+
+.line-effect:hover::after {
+    width: 100%;
+    transition: width .3s; 
+}
+
+/* Selve kontakt formens placering, samt kontakt overskriftens farve */ 
+
+.contact {
+    padding: 150px 0;
+    color: white;
+}
+
+/* Kontakt overskrift styling */ 
+
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* "Os" styling på kontakt siden*/ 
+
+.contact .heading h2 span {
+    color: #FDD228;
+}
+
+/* Styling af brødtekst på kontakt siden under rubriken */ 
+
+.contact .heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: white;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+/* Styling af selve kontakt formen på venstre side, placering, størrelse, farve osv. */ 
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #9fa2c0;
+    transition: border-color .3s;
+    border: solid 2px #404257;
+    background: 0 0;
+    border-radius: 0;
+    
+}
+
+/* Send button styling og form */ 
+
+.contact button.btn {
+    padding: 10px;
+    font-size: 16px;
+    background: #2177F8;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/* Redigering af "Kontakt detajler" ude i højre side */ 
+
+.contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #FDD228;
+}
+
+/* Kontakt detajlers brødtekst styling */ 
+
+.contact .title p {
+    font-size: 16px;
+    font-weight: 350;
+    color: white;
+    line-height: 1.3;
+    margin: 0 0 40px;
+    margin-left: 20px;
+}
+
+/* E-email, telefonumre og sociale medier overskrift styling */
+
+.contact .content .info {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #FDD228;
+}
+
+/* Overskrifernes størrelse, samt linje højde */
+
+.contact .content .info h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    
+}
+
+/* Brødtekstens styling under hver overskrift */
+
+.contact .content .info h4 span {
+    font-size: 16px;
+    font-weight: 350;
+    color: white;
+    
+}
+
+/* Sociale medier ikon, placering, farve, størelse osv */ 
+
+.s-m a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #2177F8;
+    color: black;
+    margin: 0 6px;
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center; 
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+/* Hover effekten når man holder musen henover */ 
+
+.s-m a:hover{
+    background: #FDD228; 
+}
+
+/* Ikoner inde i cirkel, hvor hurtigt de skal rotate når man hover */ 
+
+.s-m a i{
+    transition: 0.4s all; 
+}
+
+/* Hvordan ikonerne rotatere */
+
+.s-m a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
